@@ -1,0 +1,43 @@
+$color-1st: #ff0000;
+$color-1st-lighter: lighten($color-1st, 20%);
+
+$color-2nd: #31394d;
+$color-2nd-lighter: lighten($color-2nd, 20%);
+
+$color-success: #35d993;
+$color-success-lighter: lighten($color-success, 20%);
+$color-success-light: lighten($color-success, 10%);
+$color-success-dark: darken($color-success, 10%);
+$color-success-darker: darken($color-success, 20%);
+
+$color-info: #2baba6;
+$color-info-lighter: lighten($color-info, 20%);
+$color-info-light: lighten($color-info, 10%);
+$color-info-dark: darken($color-info, 10%);
+$color-info-darker: darken($color-info, 20%);
+
+$color-warning: #fdc34a;
+$color-warning-bg: #fdf6ed;
+$color-warning-border: #ffebd3;
+$color-warning-lighter: lighten($color-warning, 20%);
+$color-warning-light: lighten($color-warning, 10%);
+$color-warning-dark: darken($color-warning, 10%);
+$color-warning-darker: darken($color-warning, 20%);
+
+$color-danger: #fb3f47;
+
+$color-danger-lighter: lighten($color-danger, 20%);
+$color-danger-light: lighten($color-danger, 10%);
+$color-danger-dark: darken($color-danger, 10%);
+$color-danger-darker: darken($color-danger, 20%);
+
+$color-default: #cecece;
+$color-white: #cecece;
+
+$color-black: #232323;
+$color-black-lighter: lighten($color-black, 20%);
+$color-black-light: lighten($color-black, 10%);
+$color-black-lighter-more: lighten($color-black, 50%);
+
+$color-heading: $color-2nd;
+$color-body: #eff0f2;

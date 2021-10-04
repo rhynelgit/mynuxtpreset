@@ -1,0 +1,103 @@
+.qm-wizard-steps {
+   position: relative;
+
+   .qm-wizard-steps__container {      
+      padding: 25px 32px 25px 12px;
+      margin-bottom: 50px;
+
+      ul.qm-wizard-steps__list {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         float: right;
+         
+         li {
+            display: inline-block;
+            padding: 10px 100px;
+            font-size: 12px;
+            
+            &.qm-wizard-steps__wrapper_progressbar {
+               position: relative;
+               width: 430px;
+               padding: 0;
+               margin: 0;
+
+               .progressbar_status_text{
+                  position: absolute;
+                  top: -25px;
+               }
+
+               .progressbar_status {
+                  width: 100%;
+                  background-color: #fefefe;
+                  border-radius: 40px;
+
+                  .progressbar {
+                     padding-top: 6px;
+                     width: 80%;
+                     height: 4px;
+                     background-color: $color-success-dark;
+                     border-radius: 40px;
+                  }
+               }
+            }
+            
+            &.qm-wizard-steps__wrapper_btn {
+               .steps__btn {
+                  background-color: $color-1st!important;
+                  border-radius: 4px;
+                  font-size: 13px;
+                  padding: 5px 18px;
+                  color: rgb(255, 255, 255)!important;
+                  width: 134px;
+                  height: 33px;
+                  font-family: $font-2nd;
+                  font-weight: 500;
+                  border: none;
+                  outline: none!important;
+               
+                  &:active {
+                     opacity: .8;
+                     box-shadow: 0 1px rgb(212, 212, 212);
+                     transform: translateY(1px);
+                  }
+               
+                  &:hover{
+                     opacity: .8;
+                  }
+               }
+             }
+
+            &.qm-wizard-steps__wrapper_user {
+               padding: 0px!important;
+               margin: 0%;
+               align-items: center;
+               justify-content: center;
+               width: 120px;
+
+               .qm-wizard-steps__name p {
+                  padding: 0px!important;
+                  display: inline-block;
+                  flex-direction: column;
+               }
+               
+               .qm-wizard-steps__avatar {
+                  position: relative;
+                  font-size: 13px; 
+                  color: white;
+                  line-height: 30px; 
+                  left: 14px;
+                  top: -2px;
+                  padding: 9px 10px 12px 10px;
+                  width: 45px!important;
+                  min-width: 45px;
+                  height: 45px!important;
+                  border-radius: 50%;
+                  background-color: $color-danger-light;
+                  content: ' ';
+               }
+            }
+         }
+      }    
+   }
+}

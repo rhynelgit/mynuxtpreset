@@ -1,0 +1,10 @@
+html {
+    font-family: $font-1st;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body, .theme--light.v-application {
+    margin: 0;
+    background: $color-body!important;
+}

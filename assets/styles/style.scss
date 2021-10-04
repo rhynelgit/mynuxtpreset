@@ -1,0 +1,36 @@
+
+// quickmarketingcampaigns-front
+// Tailwind
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css');
+// Taolwind font family
+@import url('https://rsms.me/inter/inter.css');
+
+
+
+/* themes */
+@import "themes/main";
+
+/* Utilies */
+@import "utilies/settings";
+
+/* Base */
+// reset
+@import "base/reset";
+@import "base/typhography";
+
+/* Components */
+// pages
+@import "components/pages";
+
+/* Elements */
+// pages
+@import "elements/button";
+
+
+/* Modules */
+// wizard_step
+@import "modules/wizard_steps";
+// hero
+@import "modules/hero";
+// main
+@import "modules/main";

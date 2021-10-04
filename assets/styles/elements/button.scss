@@ -1,0 +1,51 @@
+.qm-btn {
+   border-radius: 4px;
+   font-size: 12px;
+   padding: 5px 18px;
+   color: rgb(255, 255, 255)!important;
+   width: 134px;
+   height: 36px;
+   font-family: $font-2nd;
+   font-weight: 500;
+   border: none;
+   outline: none!important;
+
+   &:active {
+      opacity: .8;
+      box-shadow: 0 1px rgb(212, 212, 212);
+      transform: translateY(1px);
+    }
+
+   &:hover{
+      opacity: .8;
+   }
+
+   &.qm-btn-primary{
+      background-color: $color-1st!important;
+   }
+
+   &.qm-btn-success{
+      background-color: $color-success!important;
+   }
+
+   &.qm-btn-info{
+      background-color: $color-info!important;
+   }
+
+   &.qm-btn-warning{
+      background-color: $color-warning!important;
+   }
+
+   &.qm-btn-danger{
+      background-color: $color-danger!important;
+   }
+
+   &.qm-btn-default{
+      background-color: $color-default!important;
+   }
+
+   &.qm-btn-white{
+      background-color: $color-white!important;
+   }
+}
+

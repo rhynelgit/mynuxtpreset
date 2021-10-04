@@ -1,0 +1,106 @@
+
+.qm-page {
+    position: relative;
+    width: 100%;    
+    padding-right: 50px!important;
+    overflow-wrap: break-word;
+    overflow: hidden;
+
+    .center-box{
+        width: 660px;
+        margin: 0 50% 0 7.2%;
+    }
+
+    .qm-page__title {
+        margin-top: 40px;
+        color: $color-black;
+        font-family: $font-3nd;
+        font-size: 22px;
+    }
+
+    .qm-page__description {
+        color: $color-black-lighter-more;
+        font-family: $font-3nd;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 4px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.check-box-wrapper {
+    display: block;
+    position: relative;
+    padding: 1px 5px!important;
+    margin: 0!important;
+
+    label {
+        cursor: pointer;
+        border-radius: 3px;
+        display: block;
+        width: 100%;
+        height: 48px;
+        padding: .775rem .95rem .175rem .95rem;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        
+      &:before {
+        width: 8px;
+        height: 8px;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      &:after {
+        width: 15px;
+        height: 15px;
+        content: '';
+        border: 2px solid #ced4da;
+        background-repeat: no-repeat;
+        background-position: 2px 3px;
+        border-radius: 4px;
+        z-index: 2;
+        position: absolute;
+        right: 22px;
+        top: 50%;
+        transform: translateY(-70%);
+        cursor: pointer;
+        transition: all 200ms ease-in;
+      }
+    }
+
+    input:checked ~ label {
+      &:before {
+        opacity: 1;
+      }
+
+      &:after {
+        background-color: $color-1st;
+        border: 2px solid $color-1st;
+      }
+    }
+
+    input {
+      width: 32px;
+      height: 32px;
+      order: 1;
+      z-index: 2;
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      cursor: pointer;
+      visibility: hidden;
+    }
+  }
